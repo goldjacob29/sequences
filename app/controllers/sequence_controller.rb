@@ -5,6 +5,7 @@ class SequenceController <ApplicationController
   end
 
   def show_answer
+    @rule = params["rule"]
     render("sequence/show_answer.html")
   end
 end
